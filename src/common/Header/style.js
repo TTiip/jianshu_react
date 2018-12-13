@@ -53,7 +53,7 @@ export const SearchWrapper = styled.div`
   position: relative;
   float: left;
   
-  .iconfont {
+  .iconfont.zoom {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -66,7 +66,6 @@ export const SearchWrapper = styled.div`
     &.focused {
       background: #777;
       color: #fff;
-      cursor: pointer;
     }
   }
 `
@@ -134,6 +133,7 @@ export const SearchInfo = styled.div`
   
   &.fade-enter-done {
     opacity: 1;
+    display: block;
   }
   
   &.fade-exit {
@@ -147,6 +147,7 @@ export const SearchInfo = styled.div`
   
   &.fade-exit-done {
     opacity: 0;
+    display: none;
   }
 	
 	&::before {
@@ -179,7 +180,7 @@ export const SearchInfoSwitch = styled.span`
 		float: left;
 		font-size: 12px;
 		margin-right: 2px;
-		transition: all .2s ease-in;
+		transition: all .3s ease-in;
 		transform-origin: center center;
 	}
 `;

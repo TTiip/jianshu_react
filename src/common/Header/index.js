@@ -8,10 +8,24 @@ class Header extends React.Component {
   render () {
     const {
       focused,
+      mouseIn,
+      list,
+      page,
+      totalPage,
+      handleMouseEnter,
+      handleMouseLeave,
       handleInputFocus,
-      handleInputBlus,
-      handleSearchIconClick
+      handleChangePage,
+      handleInputBlus
     } = this.props
+
+    let pageList = []
+    pageList = [...list.toJS().slice((page - 1) * 10, page * 10)]
+
+    // for (let i = page * 10; i < (page + 1) * 10; i++) {
+    //   pageList = [...pageList, <SearchInfoItem key={ item }>{ item }</SearchInfoItem>]
+    // }
+
     return (
       <div>
         <HeaderWrapper>
@@ -35,26 +49,29 @@ class Header extends React.Component {
                   className={ focused ? 'focused' : '' }
                 />
               </CSSTransition>
-              <i onClick={ handleSearchIconClick } className={ focused ? 'focused iconfont' : 'iconfont' }>&#xe62b;</i>
+              <i className={ focused ? 'focused iconfont zoom' : 'iconfont zoom' }>&#xe62b;</i>
               <CSSTransition
-                in={ focused }
+                in={ !!((focused || mouseIn) && pageList.length) }
                 timeout={ 300 }
                 classNames="fade"
               >
-                <SearchInfo>
+                <SearchInfo
+                  onMouseEnter={ handleMouseEnter }
+                  onMouseLeave={ handleMouseLeave }
+                >
                   <SearchInfoTitle>
                     热门搜索
-                    <SearchInfoSwitch>换一批</SearchInfoSwitch>
+                    <SearchInfoSwitch
+                      onClick={ () => handleChangePage(page, totalPage, this.spinIcon) }
+                    >
+                      <i ref={(icon) => this.spinIcon = icon} className="iconfont spin">&#xe851;</i>
+                      换一批
+                    </SearchInfoSwitch>
                   </SearchInfoTitle>
                   <SearchInfoList>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
-                    <SearchInfoItem>教育</SearchInfoItem>
+                    {
+                      pageList.map(item => <SearchInfoItem key={ item }>{ item }</SearchInfoItem>)
+                    }
                   </SearchInfoList>
                 </SearchInfo>
               </CSSTransition>
@@ -76,23 +93,38 @@ class Header extends React.Component {
 const mapStateToProps = (state) => {
   return {
     // focused: state.getIn(['headerRecucer', 'focused'])
-    focused: state.get('headerRecucer').get('focused')
+    focused: state.get('headerRecucer').get('focused'),
+    mouseIn: state.get('headerRecucer').get('mouseIn'),
+    list: state.get('headerRecucer').get('list'),
+    page: state.get('headerRecucer').get('page'),
+    totalPage: state.get('headerRecucer').get('totalPage')
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
+    handleMouseEnter () {
+      dispatch(actionCreators.getMouseEnter())
+    },
+    handleMouseLeave () {
+      dispatch(actionCreators.getMouseLeave())
+    },
     handleInputFocus () {
       dispatch(actionCreators.getList())
       dispatch(actionCreators.getSearchFocusAction())
     },
     handleInputBlus() {
-      setTimeout(() => {
-        dispatch(actionCreators.getSearchBlurAction())
-      }, 200)
+      dispatch(actionCreators.getSearchBlurAction())
     },
-    handleSearchIconClick () {
-      console.log(11)
+    handleChangePage (page, totalPage, spin) {
+      const originAngle = spin.style.transform.replace(/[^0-9]/ig, '')
+      console.log(originAngle)
+      spin.style.transform = 'rotate(360deg)'
+      if (page < totalPage) {
+        dispatch(actionCreators.getChangePageAction(page + 1))
+      } else {
+        dispatch(actionCreators.getChangePageAction(1))
+      }
     }
   }
 }

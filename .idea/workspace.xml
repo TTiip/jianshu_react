@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce4f8507-550d-465e-9831-bfbf4fe98541" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Header/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Header/store/actionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Header/store/actionCreators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Header/store/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Header/store/actionTypes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Header/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Header/store/reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/Header/style.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/Header/style.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/iconfont/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/iconfont/iconfont.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/iconfont/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/iconfont/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/statics/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/statics/iconfont/iconfont.woff" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -73,9 +82,103 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1504241422">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="js" value="18" />
+          <entry key="json" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JSON" value="1" />
+          <entry key="JavaScript" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="ESLintLanguageService" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="js" value="1605" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="JavaScript" value="1605" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/common/Header/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="101">
+              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Header/style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Header/store/reducer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionCreators.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -83,7 +186,13 @@
       <find>160</find>
       <find>200</find>
       <find>overfl</find>
+      <find>opac</find>
+      <find>getMouseLeave</find>
+      <find>conso</find>
+      <find>focus</find>
       <find>handleSearchIconClick</find>
+      <find>focused</find>
+      <find>SearchInfoSwitch</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,26 +204,26 @@
         <option value="$PROJECT_DIR$/src/index.css" />
         <option value="$PROJECT_DIR$/yarn.lock" />
         <option value="$PROJECT_DIR$/src/style.js" />
-        <option value="$PROJECT_DIR$/src/statics/iconfont/iconfont.css" />
-        <option value="$PROJECT_DIR$/src/statics/iconfont/iconfont.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/store/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/store/actionCreators.js" />
-        <option value="$PROJECT_DIR$/src/common/Header/store/actionTypes.js" />
         <option value="$PROJECT_DIR$/src/common/Header/store/index.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/store/reducer.js" />
-        <option value="$PROJECT_DIR$/src/common/Header/style.js" />
-        <option value="$PROJECT_DIR$/src/common/Header/store/reducer.js" />
         <option value="$PROJECT_DIR$/src/store/index.js" />
-        <option value="$PROJECT_DIR$/src/common/Header/index.js" />
-        <option value="$PROJECT_DIR$/src/common/Header/store/actionCreators.js" />
         <option value="$PROJECT_DIR$/public/api/detail.json" />
         <option value="$PROJECT_DIR$/public/api/headerList.json" />
         <option value="$PROJECT_DIR$/public/api/home.json" />
         <option value="$PROJECT_DIR$/public/api/homeList.json" />
         <option value="$PROJECT_DIR$/public/api/login.json" />
+        <option value="$PROJECT_DIR$/src/common/Header/store/actionTypes.js" />
+        <option value="$PROJECT_DIR$/src/common/Header/store/actionCreators.js" />
+        <option value="$PROJECT_DIR$/src/common/Header/store/reducer.js" />
+        <option value="$PROJECT_DIR$/src/statics/iconfont/iconfont.css" />
+        <option value="$PROJECT_DIR$/src/statics/iconfont/iconfont.js" />
+        <option value="$PROJECT_DIR$/src/common/Header/style.js" />
+        <option value="$PROJECT_DIR$/src/common/Header/index.js" />
       </list>
     </option>
   </component>
@@ -168,8 +277,52 @@
         <subPane>
           <expand>
             <path>
-              <item name="jianshu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jianshu" type="462c0819:PsiDirectoryNode" />
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="Header" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jianshu_react" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jianshu_react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="statics" type="462c0819:PsiDirectoryNode" />
+              <item name="iconfont" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,14 +344,14 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/statics/iconfont" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/common/Header/store" />
       <recent name="$PROJECT_DIR$/src/statics" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/public" />
-      <recent name="$PROJECT_DIR$/src/statics/iconfont" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -230,16 +383,18 @@
       <workItem from="1544674220830" duration="60000" />
       <workItem from="1544674292331" duration="69000" />
       <workItem from="1544674381435" duration="30000" />
+      <workItem from="1544675058183" duration="9329000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26067000" />
+    <option name="totallyTimeSpent" value="35396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12848867" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13270143" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -283,27 +438,6 @@
     <entry file="file://$PROJECT_DIR$/src/statics/iconfont/iconfont.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/statics/iconfont/iconfont.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionTypes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -325,27 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/style.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" lean-forward="true" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -360,20 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="15" lean-forward="true" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/store/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -398,24 +497,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/api/headerList.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/api/detail.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionCreators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -444,6 +529,95 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/api/headerList.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/store/actionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/statics/iconfont/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/statics/iconfont/iconfont.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/store/reducer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="182" column="32" selection-start-line="182" selection-start-column="32" selection-end-line="182" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
