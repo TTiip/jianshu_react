@@ -2,9 +2,10 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { CSSTransition } from 'react-transition-group';
 import { actionCreators } from './store'
+import { Link } from 'react-router-dom'
 import { HeaderWrapper, Logo, Nav, NavItem, NavSearch, SearchWrapper, SearchInfo, SearchInfoTitle, SearchInfoSwitch, SearchInfoList, SearchInfoItem, Addition, Button } from './style'
 
-class Header extends React.Component {
+class Header extends React.PureComponent {
   render () {
     const {
       focused,
@@ -22,14 +23,10 @@ class Header extends React.Component {
     let pageList = []
     pageList = [...list.toJS().slice((page - 1) * 10, page * 10)]
 
-    // for (let i = page * 10; i < (page + 1) * 10; i++) {
-    //   pageList = [...pageList, <SearchInfoItem key={ item }>{ item }</SearchInfoItem>]
-    // }
-
     return (
       <div>
         <HeaderWrapper>
-          <Logo />
+          <Link to='/'><Logo /></Link>
           <Nav>
             <NavItem className='left active'>首页</NavItem>
             <NavItem className='left'>下载App</NavItem>
@@ -44,7 +41,7 @@ class Header extends React.Component {
                 classNames="slide"
               >
                 <NavSearch
-                  onFocus={ handleInputFocus }
+                  onFocus={ () => handleInputFocus(list) }
                   onBlur={ handleInputBlus }
                   className={ focused ? 'focused' : '' }
                 />
@@ -64,7 +61,7 @@ class Header extends React.Component {
                     <SearchInfoSwitch
                       onClick={ () => handleChangePage(page, totalPage, this.spinIcon) }
                     >
-                      <i ref={(icon) => this.spinIcon = icon} className="iconfont spin">&#xe851;</i>
+                      <i ref={ icon => this.spinIcon = icon } className="iconfont spin">&#xe851;</i>
                       换一批
                     </SearchInfoSwitch>
                   </SearchInfoTitle>
@@ -90,43 +87,38 @@ class Header extends React.Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    // focused: state.getIn(['headerRecucer', 'focused'])
-    focused: state.get('headerRecucer').get('focused'),
-    mouseIn: state.get('headerRecucer').get('mouseIn'),
-    list: state.get('headerRecucer').get('list'),
-    page: state.get('headerRecucer').get('page'),
-    totalPage: state.get('headerRecucer').get('totalPage')
-  }
-}
+const mapStateToProps = (state) => ({
+  // focused: state.getIn(['headerRecucer', 'focused'])
+  focused: state.get('headerRecucer').get('focused'),
+  mouseIn: state.get('headerRecucer').get('mouseIn'),
+  list: state.get('headerRecucer').get('list'),
+  page: state.get('headerRecucer').get('page'),
+  totalPage: state.get('headerRecucer').get('totalPage')
+})
 
-const mapDispatchToProps = (dispatch) => {
-  return {
+const mapDispatchToProps = (dispatch) => ({
     handleMouseEnter () {
       dispatch(actionCreators.getMouseEnter())
     },
     handleMouseLeave () {
       dispatch(actionCreators.getMouseLeave())
     },
-    handleInputFocus () {
-      dispatch(actionCreators.getList())
+    handleInputFocus (list) {
+      !list.toJS().length && dispatch(actionCreators.getList())
       dispatch(actionCreators.getSearchFocusAction())
     },
     handleInputBlus() {
       dispatch(actionCreators.getSearchBlurAction())
     },
     handleChangePage (page, totalPage, spin) {
-      const originAngle = spin.style.transform.replace(/[^0-9]/ig, '')
-      console.log(originAngle)
-      spin.style.transform = 'rotate(360deg)'
+      let originAngle = +spin.style.transform.replace(/\D/ig, '')
+      spin.style.transform = `rotate(${originAngle + 360}deg)`
       if (page < totalPage) {
         dispatch(actionCreators.getChangePageAction(page + 1))
       } else {
         dispatch(actionCreators.getChangePageAction(1))
       }
     }
-  }
-}
+  })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Header)
