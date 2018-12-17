@@ -7,7 +7,7 @@ import {
   Content
 } from "./style";
 
-class Detail extends React.Component {
+class Detail extends React.PureComponent {
   componentDidMount (id) {
     this.props.getInitData(this.props.match.params.id)
   }
