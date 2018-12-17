@@ -8,8 +8,8 @@ import {
 } from "./style";
 
 class Detail extends React.Component {
-  componentDidMount () {
-    this.props.getInitData()
+  componentDidMount (id) {
+    this.props.getInitData(this.props.match.params.id)
   }
 
   render () {
@@ -36,8 +36,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-  getInitData () {
-    dispatch(actionCreators.getInitData())
+  getInitData (id) {
+    dispatch(actionCreators.getInitData(id))
   }
 })
 
