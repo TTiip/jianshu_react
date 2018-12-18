@@ -81,10 +81,12 @@ class Header extends React.PureComponent {
           </Nav>
           <Addition>
             <Button className='reg'>注册</Button>
-            <Button className='weitting'>
-              <i className="iconfont">&#xe615;</i>
-              写文章
-            </Button>
+            <Link to='/write'>
+              <Button className='weitting'>
+                <i className="iconfont">&#xe615;</i>
+                写文章
+              </Button>
+            </Link>
           </Addition>
         </HeaderWrapper>
       </div>
